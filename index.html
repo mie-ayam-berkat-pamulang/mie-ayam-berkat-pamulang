@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Mie Ayam Berkat Pamulang – Mie ayam enak, halal, tanpa MSG. Tersedia di GoFood, GrabFood, ShopeeFood dan Google Maps.">
   <title>Mie Ayam Berkat Pamulang</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -24,11 +28,20 @@
     h1 {
       margin: 0.2rem 0;
       font-size: 1.8rem;
-      color: #222;
     }
-    p {
-      margin: 0.5rem 0;
-      font-size: 1rem;
+    nav {
+      background: #ffcc80;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .buttons {
       display: flex;
@@ -50,8 +63,15 @@
       background: #fb8c00;
     }
     .section {
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
     }
     .section img {
       max-width: 90%;
@@ -59,21 +79,81 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
+    .testimoni {
+      background: #fffdf7;
+    }
+    blockquote {
+      border-left: 4px solid #ffa726;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 700px;
+      background: #fffaf0;
+      font-style: italic;
+    }
+    blockquote footer {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: right;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background: #ffa726;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #fb8c00;
+    }
     footer {
       text-align: center;
       font-size: 0.8rem;
       padding: 1rem;
       background: #fff0d3;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo-mie-ayam.png" alt="Logo Mie Ayam Berkat Pamulang" />
     <h1>Mie Ayam Berkat Pamulang</h1>
     <p>Cluster Taman Anggrek, Blok C No. 32</p>
     <p>Buka setiap hari: 06.00 – 23.59</p>
   </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#pesan">Pesan</a>
+  </nav>
 
   <div class="buttons">
     <a href="https://gofood.link/u/KOn3B9" target="_blank">GoFood</a> 
@@ -84,42 +164,66 @@
     <a href="https://instagram.com/mieayamberkatpamulang" target="_blank">Instagram</a>
   </div>
 
-  <div class="section">
+  <div class="section" id="menu">
     <h2>Menu</h2>
     <img src="menu-mie-ayam.jpg" alt="Daftar Menu Mie Ayam Berkat Pamulang" />
   </div>
 
-  <h2 class="text-2xl font-bold mt-10">Testimoni Pelanggan</h2>
-<div class="bg-white p-4 rounded shadow space-y-4 mt-4">
-  <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-gray-700">
-    “Mie-nya enak banget, tanpa MSG, dan porsinya pas. Bakso Wagyu-nya juga mantap!”
-    <footer class="mt-2 text-sm text-gray-500">— Pelanggan GoFood</footer>
-  </blockquote>
-  <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-gray-700">
-    “Rasa mie ayamnya autentik, topping melimpah, dan sambalnya pedasnya pas. Recommended!”
-    <footer class="mt-2 text-sm text-gray-500">— Pelanggan GoFood</footer>
-  </blockquote>
-  <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-gray-700">
-    “Mie-nya kenyal, ayam cincangnya gurih, dan sayurnya segar. Pasti order lagi!”
-    <footer class="mt-2 text-sm text-gray-500">— Pelanggan GoFood</footer>
-  </blockquote>
-  <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-gray-700">
-    “Porsinya besar dan rasanya lezat. Pengiriman cepat dan makanan masih hangat saat sampai.”
-    <footer class="mt-2 text-sm text-gray-500">— Pelanggan GrabFood</footer>
-  </blockquote>
-  <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-gray-700">
-    “Mie ayamnya enak banget, topping melimpah, dan sambalnya pedasnya pas. Recommended!”
-    <footer class="mt-2 text-sm text-gray-500">— Pelanggan ShopeeFood</footer>
-  </blockquote>
-  <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-gray-700">
-    “Tempatnya bersih dan nyaman. Pelayanan ramah dan mie ayamnya luar biasa enak.”
-    <footer class="mt-2 text-sm text-gray-500">— Pelanggan Google Maps</footer>
-  </blockquote>
-</div>
+  <div class="section" id="galeri">
+    <h2>Galeri Makanan</h2>
+    <div class="gallery">
+      <img src="galeri1.jpg" alt="Mie ayam original">
+      <img src="galeri2.jpg" alt="Mie ayam bakso wagyu">
+      <img src="galeri3.jpg" alt="Topping lengkap mie ayam">
+    </div>
+  </div>
 
-  
+  <div class="section testimoni" id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <blockquote>“Mie-nya enak banget, tanpa MSG, dan porsinya pas. Bakso Wagyu-nya juga mantap!”<footer>— Pelanggan GoFood</footer></blockquote>
+    <blockquote>“Rasa mie ayamnya autentik, topping melimpah, dan sambalnya pedasnya pas. Recommended!”<footer>— Pelanggan GoFood</footer></blockquote>
+    <blockquote>“Mie-nya kenyal, ayam cincangnya gurih, dan sayurnya segar. Pasti order lagi!”<footer>— Pelanggan GoFood</footer></blockquote>
+    <blockquote>“Porsinya besar dan rasanya lezat. Pengiriman cepat dan makanan masih hangat saat sampai.”<footer>— Pelanggan GrabFood</footer></blockquote>
+    <blockquote>“Mie ayamnya enak banget, topping melimpah, dan sambalnya pedasnya pas. Recommended!”<footer>— Pelanggan ShopeeFood</footer></blockquote>
+    <blockquote>“Tempatnya bersih dan nyaman. Pelayanan ramah dan mie ayamnya luar biasa enak.”<footer>— Pelanggan Google Maps</footer></blockquote>
+  </div>
+
+  <div class="section" id="pesan">
+    <h2>Pesan Sekarang</h2>
+    <form onsubmit="return kirimPesanan()">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+      <textarea id="pesanan" placeholder="Pesanan Anda" rows="4" required></textarea>
+      <button type="submit">Kirim ke WhatsApp</button>
+    </form>
+  </div>
+
   <footer>
     &copy; 2025 Mie Ayam Berkat Pamulang. All rights reserved.
   </footer>
+
+  <script>
+    function kirimPesanan() {
+      const nama = document.getElementById('nama').value;
+      const pesanan = document.getElementById('pesanan').value;
+      const nomor = '6285311533901';
+      const teks = `Halo, saya ${nama}. Saya ingin pesan:\n${pesanan}`;
+      const link = `https://wa.me/${nomor}?text=${encodeURIComponent(teks)}`;
+      window.open(link, '_blank');
+      return false;
+    }
+
+    // Animasi fade-in saat scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
