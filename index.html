@@ -9,55 +9,90 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
-      background-color: #fff8f0;
+      background: #fff8f0;
       color: #333;
     }
     header {
-      background-color: #f57c00;
+      background: #ff9800;
+      color: white;
       padding: 20px;
+      text-align: center;
     }
     header img {
-      max-height: 100px;
+      max-width: 120px;
+      margin-bottom: 10px;
     }
-    h1 {
-      margin-top: 10px;
+    main {
+      padding: 20px;
     }
-    .menu {
-      max-width: 600px;
-      margin: 20px auto;
+    h2 {
+      color: #ff9800;
     }
-    .menu img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-    }
-    footer {
-      background-color: #f57c00;
-      color: white;
-      padding: 15px;
-      margin-top: 30px;
+    .menu, .info, .link {
+      margin-bottom: 30px;
     }
     a {
-      color: white;
+      color: #ff5722;
       text-decoration: none;
-      font-weight: bold;
+    }
+    .social a {
+      display: inline-block;
+      margin-right: 10px;
+      background: #f5f5f5;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      background: #ff9800;
+      color: white;
+      padding: 10px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 5px 0;
+      background-color: #ff5722;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.ibb.co/4Z9VVvN/logo.png" alt="Logo Mie Ayam Berkat Pamulang" />
+    <img src="https://raw.githubusercontent.com/mie-ayam-berkat-pamulang/mie-ayam-berkat-pamulang/main/logo.png" alt="Logo Mie Ayam Berkat">
     <h1>Mie Ayam Berkat Pamulang</h1>
+    <p>Cluster Taman Anggrek, Blok C No. 32</p>
+    <p>Buka setiap hari: 06.00 – 23.59 WIB</p>
   </header>
 
-  <section class="menu">
-    <h2>Daftar Menu</h2>
-    <img src="https://i.ibb.co/Z8t5Tf1/menu.jpg" alt="Menu Mie Ayam Berkat" />
-  </section>
+  <main>
+    <section class="menu">
+      <h2>Menu</h2>
+      <img src="https://raw.githubusercontent.com/mie-ayam-berkat-pamulang/mie-ayam-berkat-pamulang/main/menu.jpg" alt="Daftar Menu" style="width:100%; max-width:500px;">
+    </section>
+
+    <section class="link">
+      <h2>Pemesanan Online</h2>
+      <a class="button" href="https://gofood.link/u/KOn3B9" target="_blank">Pesan via GoFood</a><br/>
+      <a class="button" href="https://r.grab.com/g/6-20250508_105314_2da9d2a2d3ad4025bdc3b7a5ac4e0d78_MEXMPS-6-CZNBRUBBVK5TDE" target="_blank">Pesan via GrabFood</a><br/>
+      <a class="button" href="https://spf.shopee.co.id/AKNrOUaceu" target="_blank">Pesan via ShopeeFood</a>
+    </section>
+
+    <section class="info">
+      <h2>Lokasi Kami</h2>
+      <p><a href="https://maps.app.goo.gl/bV3Hpvqei4SRdXFB9" target="_blank">Lihat di Google Maps</a></p>
+    </section>
+
+    <section class="social">
+      <h2>Ikuti Kami</h2>
+      <a href="https://www.instagram.com/mieayamberkatpamulang?igsh=dDN0d29qb2pkbzlp" target="_blank">@mieayamberkatpamulang</a>
+    </section>
+  </main>
 
   <footer>
-    <p>Pemesanan & Delivery: <a href="https://wa.me/6285311533901" target="_blank">0853-1153-3901</a></p>
+    &copy; 2025 Mie Ayam Berkat Pamulang
   </footer>
 </body>
 </html>
