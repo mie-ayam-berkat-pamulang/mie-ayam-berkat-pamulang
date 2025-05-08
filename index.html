@@ -2,97 +2,123 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mie Ayam Berkat Pamulang</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff8f0;
+      line-height: 1.6;
+      background-color: #fffdf7;
       color: #333;
     }
-    header {
-      background: #ff9800;
+    header, footer {
+      background-color: #f44336;
       color: white;
-      padding: 20px;
+      padding: 1rem;
       text-align: center;
     }
-    header img {
-      max-width: 120px;
-      margin-bottom: 10px;
+    nav a {
+      margin: 0 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
-    main {
-      padding: 20px;
+    .container {
+      padding: 1rem;
     }
-    h2 {
-      color: #ff9800;
+    .logo {
+      width: 150px;
+      display: block;
+      margin: 1rem auto;
     }
-    .menu, .info, .link {
-      margin-bottom: 30px;
+    .menu-image {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
     }
-    a {
-      color: #ff5722;
+    .testimoni {
+      background: #ffecec;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #f44336;
+    }
+    .btn-whatsapp {
+      display: block;
+      width: fit-content;
+      margin: 1rem auto;
+      background-color: #25D366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
       text-decoration: none;
     }
-    .social a {
-      display: inline-block;
-      margin-right: 10px;
-      background: #f5f5f5;
-      padding: 8px 12px;
-      border-radius: 6px;
-    }
-    footer {
+    .info {
       text-align: center;
-      background: #ff9800;
-      color: white;
-      padding: 10px;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 15px;
-      margin: 5px 0;
-      background-color: #ff5722;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/mie-ayam-berkat-pamulang/mie-ayam-berkat-pamulang/main/logo.png" alt="Logo Mie Ayam Berkat">
+    <img src="logo.png" alt="Logo Mie Ayam Berkat" class="logo" />
     <h1>Mie Ayam Berkat Pamulang</h1>
-    <p>Cluster Taman Anggrek, Blok C No. 32</p>
-    <p>Buka setiap hari: 06.00 – 23.59 WIB</p>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="#testimoni">Testimoni</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="menu">
+  <div class="container">
+    <section id="menu">
       <h2>Menu</h2>
-      <img src="https://raw.githubusercontent.com/mie-ayam-berkat-pamulang/mie-ayam-berkat-pamulang/main/menu.jpg" alt="Daftar Menu" style="width:100%; max-width:500px;">
+      <img src="menu.jpg" alt="Menu Mie Ayam" class="menu-image" />
     </section>
 
-    <section class="link">
-      <h2>Pemesanan Online</h2>
-      <a class="button" href="https://gofood.link/u/KOn3B9" target="_blank">Pesan via GoFood</a><br/>
-      <a class="button" href="https://r.grab.com/g/6-20250508_105314_2da9d2a2d3ad4025bdc3b7a5ac4e0d78_MEXMPS-6-CZNBRUBBVK5TDE" target="_blank">Pesan via GrabFood</a><br/>
-      <a class="button" href="https://spf.shopee.co.id/AKNrOUaceu" target="_blank">Pesan via ShopeeFood</a>
-    </section>
-
-    <section class="info">
-      <h2>Lokasi Kami</h2>
+    <section id="lokasi" class="info">
+      <h2>Lokasi & Jam Buka</h2>
+      <p><strong>Alamat:</strong> Cluster Taman Anggrek, Blok C No. 32</p>
+      <p><strong>Jam Buka:</strong> Setiap hari, 06.00 - 23.59</p>
       <p><a href="https://maps.app.goo.gl/bV3Hpvqei4SRdXFB9" target="_blank">Lihat di Google Maps</a></p>
+      <p><a href="https://www.instagram.com/mieayamberkatpamulang" target="_blank">Instagram</a></p>
+      <p>
+        <a href="https://gofood.link/u/KOn3B9" target="_blank">GoFood</a> |
+        <a href="https://r.grab.com/g/6-20250508_105314_2da9d2a2d3ad4025bdc3b7a5ac4e0d78_MEXMPS-6-CZNBRUBBVK5TDE" target="_blank">GrabFood</a> |
+        <a href="https://spf.shopee.co.id/AKNrOUaceu" target="_blank">ShopeeFood</a>
+      </p>
     </section>
 
-    <section class="social">
-      <h2>Ikuti Kami</h2>
-      <a href="https://www.instagram.com/mieayamberkatpamulang?igsh=dDN0d29qb2pkbzlp" target="_blank">@mieayamberkatpamulang</a>
+    <section id="testimoni">
+      <h2>Testimoni Pelanggan</h2>
+      <div class="testimoni">
+        "Rasa mie ayamnya enak, porsinya pas, dan harga terjangkau. Pelayanan cepat dan ramah."<br />
+        — Pelanggan GoFood
+      </div>
+      <div class="testimoni">
+        "Mie ayamnya lezat, baksonya kenyal, dan kuahnya gurih. Pasti akan pesan lagi!"<br />
+        — Pelanggan GrabFood
+      </div>
+      <div class="testimoni">
+        "Tempatnya bersih, makanan disajikan hangat, dan sambalnya mantap. Recomended!"<br />
+        — Pelanggan ShopeeFood
+      </div>
+      <div class="testimoni">
+        "Lokasinya mudah ditemukan, pelayanan cepat, dan mie ayamnya juara. Top!"<br />
+        — Pelanggan Google Maps
+      </div>
     </section>
-  </main>
+
+    <a class="btn-whatsapp" href="https://wa.me/6285311533901" target="_blank">Pesan via WhatsApp</a>
+  </div>
 
   <footer>
-    &copy; 2025 Mie Ayam Berkat Pamulang
+    <p>&copy; 2025 Mie Ayam Berkat Pamulang</p>
   </footer>
 </body>
 </html>
