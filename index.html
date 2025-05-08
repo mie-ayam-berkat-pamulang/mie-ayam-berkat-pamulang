@@ -4,94 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mie Ayam Berkat Pamulang</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fff8f0;
+      background-color: #fff8ec;
       color: #333;
-      text-align: center;
     }
+
     header {
       background-color: #ffa500;
+      text-align: center;
       padding: 20px;
     }
+
     header img {
-      height: 100px;
+      width: 120px;
+      margin-bottom: 10px;
     }
+
     h1 {
       margin: 10px 0 0;
+      font-size: 28px;
     }
-    section {
+
+    p {
+      margin: 4px 0;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
       padding: 20px;
     }
-    .menu img {
-      max-width: 90%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+
     .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
       background-color: #ffa500;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .buttons img {
-      height: 24px;
-      vertical-align: middle;
-      margin-right: 6px;
-    }
-    .testimoni {
-      background-color: #fff3e0;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
-    footer {
-      padding: 20px;
-      background-color: #222;
       color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .buttons a:hover {
+      background-color: #e59400;
+    }
+
+    .section {
+      text-align: center;
+      margin: 30px 10px;
+    }
+
+    .section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin: 30px 0 10px;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo Mie Ayam Berkat Pamulang"/>
+    <img src="logo-mie-ayam.png" alt="Logo Mie Ayam Berkat Pamulang" />
     <h1>Mie Ayam Berkat Pamulang</h1>
     <p>Cluster Taman Anggrek, Blok C No. 32</p>
-    <p>Buka setiap hari: 06.00 - 23.59</p>
+    <p>Buka setiap hari: 06.00 – 23.59</p>
   </header>
 
-  <section class="buttons">
-    <a href="https://gofood.link/u/KOn3B9" target="_blank"><img src="gofood.png" alt="">GoFood</a>
-    <a href="https://r.grab.com/g/6-20250508_105314_2da9d2a2d3ad4025bdc3b7a5ac4e0d78_MEXMPS-6-CZNBRUBBVK5TDE" target="_blank"><img src="grabfood.png" alt="">GrabFood</a>
-    <a href="https://spf.shopee.co.id/AKNrOUaceu" target="_blank"><img src="shopeefood.png" alt="">ShopeeFood</a>
-    <a href="https://maps.app.goo.gl/bV3Hpvqei4SRdXFB9" target="_blank"><img src="maps.png" alt="">Google Maps</a>
-    <a href="https://wa.me/6285311533901" target="_blank"><img src="whatsapp.png" alt="">WhatsApp</a>
-    <a href="https://www.instagram.com/mieayamberkatpamulang" target="_blank"><img src="instagram.png" alt="">Instagram</a>
-  </section>
+  <div class="buttons">
+    <a href="https://gofood.link" target="_blank">GoFood</a>
+    <a href="https://grabfood.link" target="_blank">GrabFood</a>
+    <a href="https://shopeefood.link" target="_blank">ShopeeFood</a>
+    <a href="https://maps.app.goo.gl/link" target="_blank">Google Maps</a>
+    <a href="https://wa.me/6285311533901" target="_blank">WhatsApp</a>
+    <a href="https://instagram.com/username" target="_blank">Instagram</a>
+  </div>
 
-  <section class="menu">
+  <div class="section">
     <h2>Menu</h2>
-    <img src="menu.jpg" alt="Daftar Menu Mie Ayam Berkat Pamulang">
-  </section>
-
-  <section class="testimoni">
-    <h2>Testimoni Pelanggan</h2>
-    <p>"Mienya enak banget, porsinya pas dan sambalnya mantap!"</p>
-    <p>"Langganan terus karena rasanya konsisten dan cepat pelayanannya."</p>
-    <p>"Tempatnya bersih, toppingnya banyak. Recommended!"</p>
-  </section>
+    <img src="menu-mie-ayam.jpg" alt="Daftar Menu Mie Ayam Berkat Pamulang" />
+  </div>
 
   <footer>
-    <p>&copy; 2025 Mie Ayam Berkat Pamulang</p>
+    &copy; 2025 Mie Ayam Berkat Pamulang
   </footer>
 
 </body>
